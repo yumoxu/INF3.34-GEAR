@@ -8,13 +8,11 @@
 - **Inference**: infer variables, e.g., infer $\mathbf z$ from $\mathbf x$ with $p(\mathbf z| \mathbf x)$.
 
 ##NVI Basics
-以$\mathbf{z} \rightarrow \mathbf{x}$为例。Posterior distribution是贝叶斯统计的核心成分。**Learning**的一个重要目标即是从data中学习posterior distribution $p(\mathbf z | \mathbf x)$, 来更新对$\mathbf z|\mathbf x$的belief. 
+以$\mathbf{z} \rightarrow \mathbf{x}​$为例。Posterior distribution是贝叶斯统计的核心成分。**Learning**的一个重要目标即是从data中学习posterior distribution $p(\mathbf z | \mathbf x)​$, 来更新对$\mathbf z|\mathbf x​$的belief. 
 
 最直观的方法是从joint probability中marginalize $\mathbf z$:
 
-```
-![$$p(\mathbf z | \mathbf x) = \frac{p(\mathbf x, \mathbf z)}{\int_{\mathbf z} p(\mathbf x, \mathbf z)}$$](http://latex.codecogs.com/gif.latex?Concentration%3D%5Cfrac%7BTotalTemplate%7D%7BTotalVolume%7D)  
-```
+$$p(\mathbf z | \mathbf x) = \frac{p(\mathbf x, \mathbf z)}{\int_{\mathbf z} p(\mathbf x, \mathbf z)}$$
 
 然而，绝大多数model都无法计算出以上normalization constant中的积分。
 
