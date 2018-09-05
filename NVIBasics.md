@@ -12,7 +12,9 @@
 
 最直观的方法是从joint probability中marginalize $\mathbf z$:
 
-$$p(\mathbf z | \mathbf x) = \frac{p(\mathbf x, \mathbf z)}{\int_{\mathbf z} p(\mathbf x, \mathbf z)}$$
+```
+![$$p(\mathbf z | \mathbf x) = \frac{p(\mathbf x, \mathbf z)}{\int_{\mathbf z} p(\mathbf x, \mathbf z)}$$](http://latex.codecogs.com/gif.latex?Concentration%3D%5Cfrac%7BTotalTemplate%7D%7BTotalVolume%7D)  
+```
 
 然而，绝大多数model都无法计算出以上normalization constant中的积分。
 
